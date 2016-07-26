@@ -48,10 +48,10 @@ cd $VCASH_ROOT
 
 mkdir -p deps/db/
 cd deps/db/
-wget --no-check-certificate "https://download.oracle.com/berkeley-db/db-4.8.30.tar.gz"
-tar -xzf db-4.8.30.tar.gz
-rm -rf db-4.8.30.tar.gz
-cd db-4.8.30/build_unix/
+wget --no-check-certificate "https://download.oracle.com/berkeley-db/db-6.1.29.NC.tar.gz"
+tar -xzf db-6.1.29.NC.tar.gz
+rm -rf db-6.1.29.NC.tar.gz
+cd db-6.1.29.NC/build_unix/
 ../dist/configure --enable-cxx --prefix=$VCASH_ROOT/deps/db/
 make && make install
 cd $VCASH_ROOT
